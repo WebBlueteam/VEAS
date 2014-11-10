@@ -6,39 +6,80 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
+    <!-- permission -->
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.mapbcb.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+         The following two permissions are not required to use
+	     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- My Location -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- end per -->
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.Veas" >
+        <!-- metadata -->
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+            <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyC9fr-g_QlzsQyoNJtMmH-MRcWu7DpXe6o" />
+            <!-- meta data -->
         <activity
-            android:name=".Login"
+            android:name="com.ailab.veas.Login"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+         <activity
+            android:name="com.ailab.veas.map.MyMap"
+            android:label="@string/app_name"></activity>
         <activity
             android:name="com.ailab.veas.RegisterFragment"
             android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
         </activity>
-        <activity android:name="com.ailab.veas.Comment"
-            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"  >
-        </activity>
-        <activity android:name="com.ailab.veas.NewPost" 
+        <activity
+            android:name="com.ailab.veas.Comment"
             android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
         </activity>
-        <activity android:name="com.ailab.veas.MainActivity">
+        <activity
+            android:name="com.ailab.veas.NewPost"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
         </activity>
-        <activity android:name="com.ailab.veas.DetailProfile"
-            android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name="com.ailab.veas.MainActivity" >
         </activity>
-        <activity android:name="com.ailab.veas.ViewMore"
-            android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name="com.ailab.veas.DetailProfile"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ailab.veas.ViewMore"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
     </application>
 
