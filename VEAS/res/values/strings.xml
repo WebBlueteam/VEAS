@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">VEAS</string>
+	<string name="null_str"></string>
+	<string name="search">Search</string>
+	
+	<!-- login -->
+	<string name="login_acc_hint">Tên đăng nhập</string>
+	<string name="login_pass_hint">Mật khẩu</string>
+	<string name="login_button_login">Đăng nhập</string>
+	<string name="login_register_tv">Đăng ký tài khoản mới</string>
+	<string name="login_slogan_str">Vietnam Emergency Alert System</string>
+	<string name="register_title_str"><b>ĐĂNG KÝ</b></string>
+	
+	<!-- item news -->
+	<string name="detail_text_content_str">Rạng sáng 17/9, tại Lạng Sơn đã xảy ra 2 vụ lở đất, khiến 7 người
+chết và 6 người bị thương. Trong số nạn nhân tử vong có một 
+cháu bé 5 tuổi&#8230;</string>
+	<string name="detail_see_more"><b> [Xem thêm]</b></string>
+</resources>

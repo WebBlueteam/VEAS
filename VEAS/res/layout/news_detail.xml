@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                    android:id="@+id/map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/map_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg_map" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/map"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_avatar" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/map"
+                    android:layout_toRightOf="@id/avatar" >
+
+                    <TextView
+                        android:id="@+id/info_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Mai Anh Ha"
+                        android:textColor="#26a5a5"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/info_location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info_name"
+                        android:paddingLeft="5dp"
+                        android:text="Lived at Ho Chi Minh City" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/header"
+                android:background="#fff"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cây ngã trung tâm quận 3"
+                    android:textSize="17dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/content_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:text="@string/detail_text_content_str"
+                    android:paddingBottom="10dp"
+                    android:textColor="#333"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/idetail_image_content_id"
+                    android:layout_below="@id/content_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d1d5d0"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/detail_content_image" />
+                <View 
+                    android:id="@+id/line"
+                    android:layout_below="@id/idetail_image_content_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#88d2d2"/>
+                <RelativeLayout 
+                    android:layout_below="@id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:id="@+id/footer_content_detail">
+                    <TextView 
+                        android:id="@+id/date_content_detail"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="08 - 11 - 2014"/>
+                    <ImageView 
+                        android:id="@+id/share_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/btn_share"/>
+                    <TextView 
+                        android:id="@+id/share_text"
+                        android:layout_toLeftOf="@id/share_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="12"/>
+                    <ImageView 
+                        android:id="@+id/comment_content"
+                        android:layout_toLeftOf="@id/share_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_comment"/>
+                    <TextView 
+                        android:id="@+id/comment_text"
+                        android:layout_toLeftOf="@id/comment_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="2"/>
+                    <ImageView 
+                        android:id="@+id/like_content"
+                        android:layout_toLeftOf="@id/comment_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_like"/>
+                    <TextView 
+                        android:id="@+id/like_text"
+                        android:layout_toLeftOf="@id/like_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_back_profile" />
+    </LinearLayout>
+
+</RelativeLayout>

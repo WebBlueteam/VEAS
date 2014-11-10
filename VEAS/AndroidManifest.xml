@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ailab.veas"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Veas" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ailab.veas.RegisterFragment"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity android:name="com.ailab.veas.Comment"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"  >
+        </activity>
+        <activity android:name="com.ailab.veas.NewPost" 
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity android:name="com.ailab.veas.MainActivity">
+        </activity>
+        <activity android:name="com.ailab.veas.DetailProfile"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name="com.ailab.veas.ViewMore"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+    </application>
+
+</manifest>

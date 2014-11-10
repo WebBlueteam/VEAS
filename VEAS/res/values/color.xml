@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_default">#ff4285f4</color>
+    <color name="blue_press">#cd4285f4</color>
+    
+    <color name="gray_no_press">#ff999999</color>
+    <color name="gray_yes_press">#cd999999</color>
+    
+    <color name="bg_info_no_press">#ffbfc0c0</color>
+    <color name="bg_info_yes_press">#ffd1d5d0</color>
+    
+    <color name="bg_item_info_no_press">#ffd3d6db</color>
+    <color name="bg_item_info_yes_press">#80d1d5d0</color>
+    
+    
+    
+    
+</resources>

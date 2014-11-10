@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout 
+        android:id="@+id/comment_layout_header_like_lay"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#8b8f94"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/comment_like_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like1"/>
+        <TextView 
+            android:id="@+id/comment_like_text_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:text="Có 10 người tin điều này"/>
+    </LinearLayout>
+	<RelativeLayout 
+        android:id="@+id/comment_layout_bottom_comment_lay"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d1d5d0"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <ImageView 
+            android:id="@+id/comment_button_send_id"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/send"/>
+        <EditText
+            android:id="@+id/comment_edit_text_id"
+            android:layout_toLeftOf="@id/comment_button_send_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:hint="Nhập bình luận ..."/>
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/comment_list_comment"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_layout_header_like_lay"
+        android:layout_above="@id/comment_layout_bottom_comment_lay"></ListView>
+</RelativeLayout>
