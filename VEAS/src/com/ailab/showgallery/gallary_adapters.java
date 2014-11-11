@@ -12,9 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.alert.R;
-import com.example.showgallery.Custom_gallery;
+import com.ailab.showgallery.Custom_gallery;
+import com.ailab.veas.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 
@@ -137,7 +136,7 @@ import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 					
 					if(count==6)
 					{
-						Toast.makeText(parent.getContext(),"Vượt quá số lượng ảnh cho phép",Toast.LENGTH_LONG).show();
+						Toast.makeText(parent.getContext(),"Số lượng ảnh tối đa là 6",Toast.LENGTH_LONG).show();
 					}
 					else
 					{

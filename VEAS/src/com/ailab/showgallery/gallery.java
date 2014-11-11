@@ -20,9 +20,8 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 
-import com.example.alert.R;
-import com.example.showgallery.Custom_gallery;
-import com.example.showgallery.gallary_adapters;
+
+import com.ailab.veas.R;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
