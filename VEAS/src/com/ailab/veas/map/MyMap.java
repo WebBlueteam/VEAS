@@ -76,6 +76,7 @@ public class MyMap extends FragmentActivity implements
 	//
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 
@@ -87,7 +88,6 @@ public class MyMap extends FragmentActivity implements
 		setContentView(R.layout.googlemap);
 		fm = (SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map);
-
 		ls = new ArrayList<Myentry>();
 		regionlist = new ArrayList<Myentry>();
 		final ImageView img_mk = (ImageView) findViewById(R.id.img_marker);
