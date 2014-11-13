@@ -16,5 +16,6 @@ public class entry_info_class {
 		public String E_username;
 		public String E_avatar;
 		public String E_Mainimg;
+		public int E_sumcomment;
 	}
 }

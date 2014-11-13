@@ -12,7 +12,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.ailab.veas.DetailProfile;
 import com.ailab.veas.R;
 import com.squareup.picasso.Picasso;
 
@@ -56,11 +58,16 @@ public class Adapter_main extends BaseAdapter{
         TextView txt_content=(TextView)convertView.findViewById(R.id.detail_text_content_id);
         // link
         TextView chitiet=(TextView)convertView.findViewById(R.id.detail_see_more_id);
- 
+        TextView date = (TextView)convertView.findViewById(R.id.detail_date_id);
+        TextView numview=(TextView)convertView.findViewById(R.id.detail_like_text_id);
+        TextView numcm=(TextView)convertView.findViewById(R.id.detail_comment_text_id);
         final Item_main_listview item = Items.get(position);
         // avata 
         //Picasso.with(parent.getContext()).load(item.Icon_user).error(R.drawable.avata).into(imv_image);
         //
+        date.setText(item.DateTime);
+        numcm.setText(item.NumComment+"");
+        numview.setText(item.NumView+"");
         txt_title.setText(item.Username);
         Picasso.with(parent.getContext()).load(item.Icon_main_picture).error(R.drawable.ic_error).into(imv_nd);
         txt_content.setText(item.Content);
@@ -69,10 +76,10 @@ public class Adapter_main extends BaseAdapter{
 			
 			@Override
 			public void onClick(View v) {
-				// Toast.makeText(main.this,item.Id+"", Toast.LENGTH_LONG).show();
-//				Intent i=new Intent(v.getContext(),Detail_entry.class);
-//				i.putExtra("ENTRY_ID", item.Id);
-//	            activity.startActivity(i);
+//				 Toast.makeText(v.getContext(),item.Id+"", Toast.LENGTH_LONG).show();
+				Intent i=new Intent(v.getContext(),DetailProfile.class);
+				i.putExtra("ENTRY_ID", item.Id);
+	            activity.startActivity(i);
 				
 			}
 		});

@@ -7,7 +7,11 @@ public class Item_main_listview {
 	public String Username;
 	public String Content;
 	public String Link;
-	public Item_main_listview(int id, String icon_user,String icon_main_pic, String username,String content,String link) {
+	public String DateTime;
+	public int NumView;
+	public int NumComment;
+	public Item_main_listview(int id, String icon_user,String icon_main_pic, 
+			String username,String content,String link,String date,int vie,int cm) {
  
 		Id = id;
 		Icon_user = icon_user;
@@ -15,6 +19,9 @@ public class Item_main_listview {
 		Username=username;
 		Content=content;
 		Link=link;
- 
+		DateTime=date;
+		NumView =vie;
+		NumComment=cm;
+		
 	}
 }
