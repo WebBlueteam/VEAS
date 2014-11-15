@@ -95,12 +95,23 @@
             android:background="#80d3f7c9"
             android:text=" Chèn địa điểm của bạn"/>
         <EditText 
-            android:id="@+id/text"
+            android:id="@+id/title"
             android:layout_alignParentTop="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
             android:padding="10dp"
-            android:hint="Write something ..."/>
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:focusable="true"
+            android:hint="Tiêu đề sự kiện"/>
+        <EditText 
+            android:id="@+id/text"
+            android:layout_below="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="10dp"
+            android:hint="Nội dung sự kiện ..."/>
     </RelativeLayout>
 </RelativeLayout>
